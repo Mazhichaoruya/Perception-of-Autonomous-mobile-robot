@@ -3,7 +3,7 @@ With the help of SLAM, offline map positioning, and 2Dto3D target detection, a p
 ## Equipment
 Autonomous-mobile-robot  
 IMU Xsens MTi-G700 
-Robosense lidar-16  
+[Robosense lidar-16 ](https://github.com/RoboSense-LiDAR/rs_driver)   
 Realsense D435  
 ## Related work
 [Object-Detection-and-location-RealsenseD435
@@ -12,14 +12,20 @@ Based Work:
 [SC-LeGO-LOAM](https://github.com/irapkaist/SC-LeGO-LOAM)  
 [hdl_localization](https://github.com/koide3/hdl_localization)  
 ## Video
-![VIDEO](https://www.youtube.com/watch?v=VE7d3ZQzOLY&t=19s)
+<iframe 
+    height=1080 
+    width=1920 
+    src="https://www.youtube.com/watch?v=VE7d3ZQzOLY&t=19s" 
+    frameborder=0 
+    allowfullscreen>
+</iframe>
 
-#自主移动机器人环境感知
+自主移动机器人环境感知
 借助SLAM、离线地图定位、2Dto3D的目标检测 完成一个初步的自主移动机器人环境感知系统
 ## 设备
 平面移动机器人  
 IMU Xsens MTi-G700 
-16线激光雷迪（Robosense lidar-16）  
+16线激光雷迪（[Robosense lidar-16](https://github.com/RoboSense-LiDAR/rs_driver)）  
 深度相机 Realsense D435
 
 ## 相关工作
@@ -28,7 +34,13 @@ IMU Xsens MTi-G700
 Based Work:  
 [SC-LeGO-LOAM](https://github.com/irapkaist/SC-LeGO-LOAM)  
 [hdl_localization](https://github.com/koide3/hdl_localization)  
-## 视频 
-![VEDIO](https://www.bilibili.com/video/BV1ND4y1d758)
+## 视频
+<iframe 
+    height=1080 
+    width=1920 
+    src="https://www.bilibili.com/video/BV1ND4y1d758" 
+    frameborder=0 
+    allowfullscreen>
+</iframe>
 
 
