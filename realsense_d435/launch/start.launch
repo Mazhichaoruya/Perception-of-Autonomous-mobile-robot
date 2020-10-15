@@ -1,0 +1,5 @@
+<launch>
+    <!-- realsense d435 Objection-->
+    <node pkg="realsense_d435" type="realsense_d435_pub" name="realsense_Object" output="screen"/>
+    <node pkg="realsense_d435" type="realsense_d435_sub" name="Object_views" output="screen" />
+</launch>

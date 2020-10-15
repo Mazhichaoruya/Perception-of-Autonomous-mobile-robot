@@ -1,0 +1,14 @@
+<launch>
+    <!--底盘串口通信与键盘控制-->
+    <include file="$(find xsens_driver)/launch/xsens_driver.launch"/>
+    <include file="$(find rslidar_pointcloud)/launch/rs_lidar_16.launch"/>
+    <node pkg="serial_communication" type="serial_communication_node" name="serial_communication_node" output="screen" />
+    <node pkg="serial_communication" type="telop_key_node" name="telop_key_node" output="screen" />
+    <!-- realsense d435 Objection-->
+    <!--<node pkg="realsense_d435" type="realsense_d435_pub" name="realsense_Object" output="screen"/>
+    <node pkg="realsense_d435" type="realsense_d435_sub" name="Object_views" output="screen"/>-->
+    <!--- TF 变换 相机 雷达和ROS坐标系之间的转换-->
+    <!--<node pkg="tf" type="static_transform_publisher" name="camera_init_to_map"  args="0 0 0 1.570795   0        1.570795 /map    /camera_init 10" />
+    <node pkg="tf" type="static_transform_publisher" name="base_link_to_camera" args="0 0 0 -1.570795 -1.570795 0        /camera /base_link   10" />-->
+    <include file="$(find lego_loam)/launch/run.launch"/>
+</launch>
