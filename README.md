@@ -29,6 +29,6 @@ Based Work:
 [SC-LeGO-LOAM](https://github.com/irapkaist/SC-LeGO-LOAM)  
 [hdl_localization](https://github.com/koide3/hdl_localization)  
 ## 视频
-[![Watch the video](https://github.com/Mazhichaoruya/Perception-of-Autonomous-mobile-robot/blob/master/image/image.png)](https://www.bilibili.com/video/BV1ND4y1d75)
+[![Watch the video](https://github.com/Mazhichaoruya/Perception-of-Autonomous-mobile-robot/blob/master/image/image.png)](https://www.bilibili.com/video/BV1ND4y1d758)
 
 
