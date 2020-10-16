@@ -2,7 +2,7 @@
 With the help of SLAM, offline map positioning, and 2Dto3D target detection, a preliminary autonomous mobile robot environment perception system is completed
 ## Equipment
 Autonomous-mobile-robot  
-IMU Xsens MTi-G700 
+IMU Xsens MTi-G700   
 [Robosense lidar-16 ](https://github.com/RoboSense-LiDAR/rs_driver)   
 Realsense D435  
 ## Related work
@@ -19,7 +19,7 @@ Based Work:
 ## 设备
 平面移动机器人  
 IMU Xsens MTi-G700 
-16线激光雷迪（[Robosense lidar-16](https://github.com/RoboSense-LiDAR/rs_driver)）  
+16线激光雷达（[Robosense lidar-16](https://github.com/RoboSense-LiDAR/rs_driver)）  
 深度相机 Realsense D435
 
 ## 相关工作
