@@ -1,0 +1,16 @@
+<launch>
+    <!--摄像头-->
+    <!--<include file="$(find realsense2_camera)/launch/rs_camera.launch"/>-->
+    <!--<include file="$(find astra_camera)/launch/astra.launch"/>-->
+    <!-- realsense d435 Objection-->
+<!--    <include file="$(find lego_loam)/launch/run.launch"/>-->
+    <include file="$(find rslidar_pointcloud)/launch/rs_lidar_16.launch"/>
+    <include file="$(find realsense2_camera)/launch/rs_camera.launch"/>
+    <include file="$(find astra_camera)/launch/astra.launch"/>
+    <node pkg="detector3d" type="decpub" name="object_detect" output="screen"/>
+<!--    <node pkg="detector3d" type="decdeal" name="Object_views" output="screen"/>-->
+    <!--- TF 变换 相机 雷达和ROS坐标系之间的转换-->
+<!--    <node pkg="tf" type="static_transform_publisher" name="pointcloud_init_to_camera"  args="0 0 0 0   0        0 /camera    /objects 30" />-->
+<!--    <node pkg="tf" type="static_transform_publisher" name="camera_init_to_map"  args="0 0 0 1.570795   0        1.570795 /map    /camera_init 10" />-->
+<!--    <node pkg="tf" type="static_transform_publisher" name="base_link_to_camera_link" args="0 0 0 0 0 0        /base_link /camera_link   30" />-->
+</launch>

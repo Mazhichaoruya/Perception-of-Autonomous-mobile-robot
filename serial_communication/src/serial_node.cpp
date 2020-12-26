@@ -11,7 +11,7 @@ SerialCommunication::SerialCommunication(ros::NodeHandle &handle)
 
     try // 检测串口状态
     {
-        ros_ser_.setPort("/dev/ttyUSB1");
+        ros_ser_.setPort("/dev/ttyUSB0");
         ros_ser_.setBaudrate(115200);
         serial::Timeout time_out = serial::Timeout::simpleTimeout(1000);
         ros_ser_.setTimeout(time_out);
@@ -55,7 +55,7 @@ void SerialCommunication::cmdVelCallback(const geometry_msgs::Twist &cmd_vel)
     ros_ser_.write(send_data_.send_buf, sizeof(send_data_.send_buf));
     cout<<"KEY:"<<cmd_vel.linear.x<<","<<cmd_vel.linear.y<<","<<cmd_vel.angular.z<<",rate="<<cmd_vel.linear.z<<endl;
     // cout << "[SerialNode]: Write to serial port successfully" << endl;
-    //ROS_INFO_STREAM("[SerialNode]: Write to serial port successfully");
+//    ROS_INFO_STREAM("[SerialNode]: Write to serial port successfully");
 }
 
 void SerialCommunication::serialTimerCallback(const ros::TimerEvent &e) // 10ms定时器

@@ -165,7 +165,7 @@ void SmartCarKeyboardTeleopNode::keyboardLoop()
                 break;
             case KEYCODE_D_CAP:
                 max_tv2 = walk_vel_;
-                speed2=-1;
+                speed2= -1;
                 dirty = true;
                 break;
             default:
