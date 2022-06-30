@@ -1,0 +1,8 @@
+<launch>
+  <node pkg="object_detection" name="object_detection_node" type="object_detection_node" output="screen">
+      <param name="engine_path" type="string" value="$(find object_detection)/engine/yolov5s.engine"/>
+      <param name="name_path" type="string" value="$(find object_detection)/engine/coco.names"/>
+      <param name="cam_num" type="int" value="2" />
+
+  </node>
+</launch>
