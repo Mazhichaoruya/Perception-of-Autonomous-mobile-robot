@@ -1,0 +1,9 @@
+<launch>
+  <node name="cams_recorder_node" pkg="cams_recorder" type="cams_recorder_node" output="screen" >
+    <param name="cam_num" value="1" />
+    <param name="cv_show" value="false" />
+    <param name="image_width" value="640" />
+    <param name="image_height" value="480" />
+    <param name="image_fps" value="10" />
+  </node>
+</launch>
