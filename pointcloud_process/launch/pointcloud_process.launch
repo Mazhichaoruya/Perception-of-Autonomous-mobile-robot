@@ -1,0 +1,14 @@
+<launch>
+  <!-- Arguments -->
+  <node pkg="pointcloud_process" name="pointcloud_node" type="pointcloud_node" output="screen">
+  </node>
+  <node pkg="pointcloud_process" name="costmap_node" type="costmap_node" output="screen">
+  <param name="car_radius"  type="double" value="0.15" />
+  <param name="plan_tolerance"     type="double" value="0.05" />
+  <param name="occupy_thresh"  type="int" value="50" />
+  <param name="costmap_width"     type="int" value="200" />
+  <param name="costmap_height"     type="int" value="200" />
+  <param name="costmap_resolution"     type="double" value="0.02" />
+  </node>
+
+</launch>

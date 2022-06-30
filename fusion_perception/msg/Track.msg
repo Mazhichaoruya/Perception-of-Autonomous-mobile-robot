@@ -1,0 +1,11 @@
+int32 classID
+int32 trackID
+int32 age
+string classname
+float32[] historyVelNorm
+geometry_msgs/Vector3 position
+geometry_msgs/Vector3 velocity
+geometry_msgs/Vector3 size
+geometry_msgs/Vector3[] trace
+sensor_msgs/PointCloud2 pointCloud
+sensor_msgs/PointCloud2[] historyPointCloud
